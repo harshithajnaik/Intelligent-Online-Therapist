@@ -250,9 +250,9 @@ header {
     justify-content: center;
 }
 
-/*.nav_container {
+.nav_container {
     width: 90%;
-}*/
+}
 
 .nav_container ul {
     list-style: none;
