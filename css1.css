@@ -102,7 +102,7 @@ img:last-of-type {
   background: 50% 50% / cover;  
 }
 
-.header {
+.header1 {
   text-align: center;
   font-size: 175%;
   color: #fff;
@@ -217,11 +217,11 @@ img:last-of-type {
   transform: scale(1.08);
 
 }
-.info-container:active{
+<!--.info-container:active{
   transform: translateZ(2px);
   box-shadow: 0px 0px 100px rgba(0,0,0,0.38);
 
-}
+}-->
 .info-thumb-header{
   position: absolute;
   bottom:15%;
@@ -242,4 +242,103 @@ img:last-of-type {
   color:white;
   font-size:15px;
   font-family: 'Annie Use Your Telescope', cursive; 
+}
+header {
+    /*margin-top: 10rem;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*.nav_container {
+    width: 90%;
+}*/
+
+.nav_container ul {
+    list-style: none;
+}
+
+.nav_container ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 4rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    color: rgb(247, 247, 247);
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+.main_menu {
+    display: flex;
+}
+
+.main_menu li {
+    position: relative;
+    width: 100%;
+}
+
+.main_menu li a {
+    background-color: #1A535C;
+    transition: background-color 200ms ease-in-out;
+}
+
+.sub_menu li a {
+    background-color: #4ECDC4;
+    text-align: center;
+}
+
+.main_menu li a:hover {
+    background-color: #4ECDC4;
+    color: rgb(255, 255, 255);
+}
+
+.sub_menu li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+.main_menu .show_sub:hover .sub_menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub_menu {
+    transition: opacity 500ms ease-in-out; 
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main_menu > li:first-child a {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.main_menu > li:last-child a {
+    border-radius: 0 1rem 1rem 0;
+}
+.main_menu > li > a {
+    position: relative;
+}
+
+.main_menu > li > a::before { 
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(255, 85, 85);
+    bottom: 3%;
+    z-index: 1;
+    border-radius: 1rem;
+    transition: width 200ms ease-in-out;
+}
+
+.main_menu > li > a:hover:before { 
+    width: 90%;
+}
+
+.sub_menu > li:last-child  > a{
+    border-radius: 0 0 1rem 1rem;
 }
